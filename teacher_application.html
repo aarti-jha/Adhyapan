@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Application Form</title>
+    <link rel="stylesheet" href="teacherapplication.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fill This Form To Be Our Certified Tutor</h1>
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="topics">Topics:</label>
+                <textarea type="text" id="topics" name="topics" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="subjects">Subjects:</label>
+                <textarea type="text" id="subjects" name="subjects" required></textarea>
+            </div>
+<br>
+            <div class="form-group">
+                <label for="age">Confirm Age (above 18):</label>
+                <input type="checkbox" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Resume (Image Upload):</label>
+                <input type="file" id="resume" name="resume" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="school">School:</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" name="submit"><a href="homepage.html" >Apply</a></button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
