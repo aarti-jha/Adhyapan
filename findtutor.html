@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tutoring</title>
+    <link rel="stylesheet" href="style.css">
+    <style>.tutor-profile1,.tutor-profile2,.tutor-profile3,.tutor-profile4,.tutor-profile5,.tutor-profile6,.tutor-profile7,.tutor-profile8,.tutor-profile9{border:2px solid black;
+    width:300px;
+    height:200px;
+    margin:20px;
+    padding:20px;
+    border-radius:5px;
+    background-color:#b3c1f5;
+   
+    }
+    .tutor-profile1{
+        margin-left:70px; 
+    }
+    .tutor-profile2{
+        margin-left:540px;
+        margin-top:-260px;
+    }
+    .tutor-profile3{
+        margin-left:1000px;
+        margin-top:-260px;
+    }
+    .tutor-profile4{
+        margin-left:70px;
+        margin-top:0px;
+    }
+    .tutor-profile5{
+        
+        margin-left:540px;
+        margin-top:-260px;
+    }
+    .tutor-profile6{
+        
+        margin-top:-260px;
+        margin-left:1000px;
+    }
+    .back{background-color:grey;
+    }
+   .navbar{
+    height:40px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+     <ul>
+         <li><img src="" alt="" class="im"></li>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Ebooks</a></li>
+         <li><a href="#">Doubt Solving</a></li>
+         <li><a href="#">Find Tutor</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Profile</a></li>
+     </ul>
+ </nav>
+     </header>
+
+
+    <div class="container">
+       <div class="back"><marquee >
+        <h1>Available Teachers with us</h1></marquee>
+    </div> 
+   <div class="c1">
+        <div id="tutors-list">
+            <div class="tutor-profile1">
+                <h2>Teacher 1</h2>
+                <p>Topics: Math, Physics</p>
+                <p>Availability: Monday, Wednesday, Friday</p>
+                <button class="request-demo" onclick="requestDemo('Teacher 1')">Request For Class</button>
+            </div>
+
+            <div class="tutor-profile2">
+                <h2>Teacher 2</h2>
+                <p>Topics: English, History</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile3">
+                <h2>Teacher 2</h2>
+                <p>Topics: English, History</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="tutor-profile4">
+                <h2>Teacher 2</h2>
+                <p>Topics: English, History</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile5">
+                <h2>Teacher 2</h2>
+                <p>Topics: English, History</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile6">
+                <h2>Teacher 2</h2>
+                <p>Topics: English, History</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>  
+                <button class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+        </div>
+        
+        </div>
+            <!-- Add more tutor profiles as needed -->
+        </div>
+    </div>
+
+    <script>
+        function requestDemo(teacherName) {
+            // You would typically send a request to the server to handle the demo request
+            // and notify the teacher. This is just a placeholder alert.
+            alert('Demo class requested with ' + teacherName);
+        }
+    </script>
+</body>
+</html>
