@@ -3,12 +3,8 @@ body, ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
 
-}
-body {
-   
-    margin: 0;
-}
 /* Style the navigation bar */
 .navbar {
     background-color: rgb(50 79 175);
@@ -37,21 +33,10 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    
 }
 
 /* Change link color on hover */
 .navbar a:hover {
     color: rgb(160, 238, 105);
     
-}
-a{
-    font-size:20px;
-}
-.container2{
-    float: left;
-    height:300px;
-    width:800px;
-    margin-left :600px;
-    margin-top: -300px;
 }
