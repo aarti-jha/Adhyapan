@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Comments</title>
+   
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            height:400px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .foot{
+        background-color: gray;
+        padding: 20px;
+        color: aliceblue;
+        margin-top:100px;
+    }
+        .comments {
+            margin-top: 20px;
+           
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+
+        .comment-text {
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        main{
+            height: 800px;
+        }
+        #profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+       h4{
+        font-family:Arial, Helvetica, sans-serif;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+           <nav class="navbar">
+            <ul>
+                <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+                <li><a href="homet.html"><h4>Home</h4></a></li>
+                <li><a href="tebook.html"><h4>Ebooks</h4></a></li>
+                <li><a href="tdoubt.html"><h4>Doubt Solving</h4></a></li>
+                <li><a href="notifications.html"><h4>Requests</h4></a></li>
+                <li><a href="contact.html"><h4>Contact</h4></a></li>
+                <li><a href="tabout.html"><h4>About Us</h4></a></li>
+                <li class="ip"><a id="profile-link" href="tdashboardprofile.html" >
+                    <img src="Group2.png" alt="Profile Image" width="40" height="40">
+                    <figcaption class="f">Profile</figcaption></a></li>
+            </ul>
+    </nav>
+        </header>
+    </header>
+
+    <main>
+        <h2>Ask Your Doubts here</h2>
+        <!-- Your webpage content goes here -->
+
+        <div class="comments" id="comments-section">
+            <h2>Comments</h2>
+
+            <div class="comment">
+                <p class="comment-author"></p>
+                <p class="comment-text">Any one can Answer it</p>
+            </div>
+
+            <!-- More comments will be dynamically added here -->
+        </div>
+
+        <textarea id="comment-text" placeholder="Type your comment here"></textarea>
+        <button onclick="submitComment()">Submit Comment</button>
+    </main>
+
+    <script>
+        function submitComment() {
+            var commentText = document.getElementById('comment-text').value;
+
+            // Get the current date and time
+            var timestamp = new Date().toLocaleString();
+
+            // Create a new comment element
+            var newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.innerHTML = `
+                <p class="comment-author">User</p>
+                <p class="comment-text">${commentText}</p>
+                <p class="comment-timestamp">${timestamp}</p>
+            `;
+
+            // Append the new comment to the comments section
+            var commentsSection = document.getElementById('comments-section');
+            commentsSection.appendChild(newComment);
+
+            // Clear the textarea after submission
+            document.getElementById('comment-text').value = '';
+        }
+    </script>
+    <footer>
+        <section id="#footer">
+        <div class="foot">
+            <p><strong>Email:</strong> adhyapan@gmail.com &nbsp; &nbsp; &nbsp; <strong>Phone:</strong> 051-521426</p>
+         
+        </div>
+    </section>
+    </footer>
+</body>
+</html>
