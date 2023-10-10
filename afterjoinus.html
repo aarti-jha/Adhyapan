@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #324FAF;
+    }
+
+    #signup-container {
+      text-align: center;
+      margin: 50px auto;
+      padding: 20px;
+      background-color:#1F253A;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+    #logo {
+        height:150px;
+      width: 200px; /* Adjust the size of your logo */
+    }
+    h2 {
+      color: #f3eded;
+    }
+
+    .signup-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #instructor-button {
+        width:380px;
+      background-color: #3498db;
+    }
+
+    #student-button {
+        width:380px;
+      background-color: #2ecc71;
+    }
+
+    #login-button {width:380px;
+      background-color: #e9803a;
+    }
+
+    .signup-button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+    <center><img id="logo" src="logo.jpg" alt="Logo"></center>
+
+    <div id="signup-container">
+      <h2>Sign Up</h2>
+      <a href="signupteacher.html" id="instructor-button" class="signup-button">As Instructor</a>
+      <a href="signupstudent.html" id="student-button" class="signup-button">As Student</a>
+      <hr>
+      <a href="login.html" id="login-button" class="signup-button">Login</a>
+    </div>
+  
+  </body>
+  </html>
