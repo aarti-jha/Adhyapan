@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tutoring</title>
+  <link rel="stylesheet" href="styling.css">
+    <style>.tutor-profile1,.tutor-profile2,.tutor-profile3,.tutor-profile4,.tutor-profile5,.tutor-profile6,.tutor-profile7,.tutor-profile8,.tutor-profile9{border:2px solid black;
+    width:300px;
+    height:200px;
+    margin:20px;
+    padding:20px;
+    border-radius:5px;
+    background-color:#5990d0;
+   
+    }
+    .tutor-profile1{
+        margin-left:70px; 
+    }
+    .tutor-profile2{
+        margin-left:540px;
+        margin-top:-260px;
+    }
+    .tutor-profile3{
+        margin-left:1000px;
+        margin-top:-260px;
+    }
+    .tutor-profile4{
+        margin-left:70px;
+        margin-top:0px;
+    }
+    .tutor-profile5{
+        
+        margin-left:540px;
+        margin-top:-260px;
+    }
+    .tutor-profile6{
+        
+        margin-top:-260px;
+        margin-left:1000px;
+    }
+    
+    .request-demo{
+        background-color: #56f95fc1;
+        height:30px;
+        border-radius:5px;
+        font-size:20px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 20px;
+        
+    }
+h2{
+    font-size:25px;
+}
+   
+#profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+       h4{
+        font-family:Arial, Helvetica, sans-serif;
+       }
+    
+
+    /* Styles for the popup container */
+    .popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styles for the overlay background */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styles for the close button */
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+                <li><a href="home.html"><h4>Home</h4></a></li>
+                <li><a href="newebook.html"><h4>Ebooks</h4></a></li>
+                <li><a href="doubt.html"><h4>Doubt Solving</h4></a></li>
+                <li><a href="findtutor.html"><h4>Find Tutor</h4></a></li>
+                <li><a href="#footer"><h4>Contact</h4></a></li>
+                <li><a href="about.html"><h4>About Us</h4></a></li>
+                <li class="ip"><a id="profile-link" href="dashboardprofile.html" >
+                    <img src="Group2.png" alt="Profile Image" width="40" height="40">
+                    <figcaption class="f">&nbsp;&nbsp;Profile</figcaption></a></li>
+            </ul>
+         
+ </nav>
+     </header>
+
+
+    
+   <div class="c1">
+        <div id="tutors-list">
+            <div class="tutor-profile1">
+                <h2>Teacher 1</h2>
+                <p>Subjects: Database</p>
+                <p>Availability: Monday, Wednesday, Friday</p>
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 1')">Request For Class</button>
+            </div>
+
+            <div class="tutor-profile2">
+                <h2>Teacher 2</h2>
+                <p>Subjects: DSA</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile3">
+                <h2>Teacher 3</h2>
+                <p>Subjects: Java</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="tutor-profile4">
+                <h2>Teacher 4</h2>
+                <p>Subjects: Python</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile5">
+                <h2>Teacher 5</h2>
+                <p>Subjects: MicroPocessor</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+            <div class="tutor-profile6">
+                <h2>Teacher 6</h2>
+                <p>Subjects: InterNetworking</p>
+                <p>Availability: Tuesday, Thursday, Saturday</p>  
+                <button id="show-popup" class="request-demo" onclick="requestDemo('Teacher 2')">Request For Class</button>
+            </div>
+        </div>
+        
+        </div>
+            <!-- Add more tutor profiles as needed -->
+        </div>
+    </div>
+
+    <script>
+        // function requestDemo(teacherName) {
+        //     // You would typically send a request to the server to handle the demo request
+        //     // and notify the teacher. This is just a placeholder alert.
+        //     // alert('Demo class requested with ' + teacherName);
+        // }
+    </script>
+ 
+
+ <!-- Popup Container -->
+ <div class="overlay" id="overlay"></div>
+ <div class="popup-container" id="popup">
+     <span class="close-btn" id="close-popup">&times;</span>
+     <h2>Request Successfull!</h2>
+     <p>We have notified the teacher, it will take 2-4 hours for the response. Thank You!</p>
+ </div>
+
+ <!-- jQuery Library -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script>
+     // Function to show the popup
+     function showPopup() {
+         $("#overlay").fadeIn();
+         $("#popup").fadeIn();
+     }
+
+     // Function to hide the popup
+     function hidePopup() {
+         $("#overlay").fadeOut();
+         $("#popup").fadeOut();
+     }
+
+     // Event listener for the "Show Popup" button
+     $(".request-demo").click(function() {
+         showPopup();
+     });
+
+     // Event listener for the close button and overlay background
+     $("#close-popup, #overlay").click(function() {
+         hidePopup();
+     });
+ </script>
+</body>
+</html>

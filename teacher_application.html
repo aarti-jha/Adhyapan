@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutor Application Form</title>
     <link rel="stylesheet" href="teacherapplication.css">
+   <style>
+  </style>
+        
+    
 </head>
 <body>
 
     <div class="container">
         <h1>Fill This Form To Be Our Certified Tutor</h1>
-        <form action="submit.php" method="post" enctype="multipart/form-data">
+        <form action="form_teacher.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
@@ -41,13 +45,17 @@
                 <textarea type="text" id="subjects" name="subjects" required></textarea>
             </div>
 <br>
+<div class="form-group">
+    <label for="availability">Availability</label>
+    <input type="text" id="Availability" name="Availability" required>
+</div>
+
             <div class="form-group">
-                <label for="age">Confirm Age (above 18):</label>
-                <input type="checkbox" id="age" name="age" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
             </div>
 
-           
-
+            
             <div class="form-group">
                 <label for="school">School:</label>
                 <input type="text" id="school" name="school" required>
@@ -59,7 +67,7 @@
             </div>
 
             <div class="form-group">
-                <button type="submit" name="submit"><a href="homepage.html" >Apply</a></button>
+                <input type="submit" value="APPLY" class="btn">
             </div>
         </form>
     </div>

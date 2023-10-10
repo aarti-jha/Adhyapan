@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification List</title>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+          
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .notification-list {
+            width: 800px;
+            height:300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-left:400px;
+        }
+
+        .notification {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .notification:last-child {
+            border-bottom: none;
+        }
+
+        .notification .title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .notification .content {
+            color: #666;
+        }
+        #profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+       h4{
+        font-family:Arial, Helvetica, sans-serif;
+       }
+    </style>
+</head>
+<body>
+    <header><nav class="navbar">
+        <ul>
+            <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+            <li><a href="homet.html"><h4>Home</h4></a></li>
+            <li><a href="newebook.html"><h4>Ebooks</h4></a></li>
+            <li><a href="doubt.html"><h4>Doubt Solving</h4></a></li>
+            <li><a href="notifications.html"><h4>Requests</h4></a></li>
+            <li><a href="#footer"><h4>Contact</h4></a></li>
+            <li><a href="about.html"><h4>About Us</h4></a></li>
+            <li class="ip"><a id="profile-link" href="dashboardprofile.html" >
+                <img src="Group2.png" alt="Profile Image" width="40" height="40">
+                <figcaption class="f">Profile</figcaption></a></li>
+        </ul>
+    </nav></header>
+    <div class="notification-list">
+        <div class="notification">
+            <div class="title">Notification 1</div>
+            <div class="content">This is the content of the first notification.</div>
+        </div>
+        <div class="notification">
+            <div class="title">Notification 2</div>
+            <div class="content">This is the content of the second notification.</div>
+        </div>
+        <div class="notification">
+            <div class="title">Notification 3</div>
+            <div class="content">This is the content of the third notification.</div>
+        </div>
+    </div>
+</body>
+</html>

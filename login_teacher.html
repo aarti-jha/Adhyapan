@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>.mainc{border:2px solid black;
-    width:200px;
-    height:250px;
-margin:100px;
-    background-color:white;
-  padding-left:70px;
-  padding-right:70px;
-  padding-top:20px;
-  padding-bottom:40px;
-
+    <style>
+      body{
+    background-color:#324FAF;
+  }
+    .mainc{border:2px solid black;
+      width:200px;
+      height:300px;
+  margin:100px;
+      background-color:white;
+    padding-left:70px;
+    padding-right:70px;
+    padding-top:20px;
+    padding-bottom:50px;
+  border-radius:10px;
+  box-shadow: 5px 10px;
 
 
   }
@@ -22,11 +27,20 @@ margin:100px;
       text-decoration:none;
       color:white;
       height:30px;
-      width:70px;
+     
+      border-radius: 5px;
+font-size:15px;
+width:80px;
+font-weight:bold;
+color:rgb(1, 22, 22);
+   
       
     }
     .a{
       color:white;
+    }
+    .b{
+      color:black
     }
     
     </style>
@@ -36,9 +50,10 @@ margin:100px;
   <center>
   <div class="mainc">
     <strong><h1>Log In</h1></strong> 
+    <form action="login_process_teacher.php" method="post">
     <label for="inputPassword" class="col-sm-2 col-form-label">Username</label>
         <div class="col-sm-20">
-          <input type="password" name="uname" class="form-control" id="inputPassword1">
+          <input type="text" name="name" class="form-control" id="inputPassword1">
           
       <div class="mb-3 row"><br>
         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
@@ -46,11 +61,13 @@ margin:100px;
           <input type="password" name="password"class="form-control" id="inputPassword1">
          <br>
         <br>
-        <button type="button" class="btn" ><a href="home.html" class="a"><strong>Log in</strong></a></button>
+        <input type="submit" value="LOG IN" class="btn">
        
-       <br><br> <a href="signup.html" class="b"><strong>Sign Up as tutor or student</strong>
+       
+        <br><br> <a href="signupteacher.html" class="b"><strong>Sign Up as Teacher</strong>
       </div>
     </div>
+  </form>
   </center>
 </body>
 </html>

@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage with Comments</title>
-    <link rel="stylesheet" href="doubt.css">
+   
+    <link rel="stylesheet" href="styling.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
-
-        header {
-            background-color: #333;
-            padding: 10px;
-            color: #fff;
-            text-align: center;
-        }
-
         main {
-            max-width: 800px;
+            max-width: 900px;
+            height:400px;
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
+        .foot{
+        background-color: gray;
+        padding: 20px;
+        color: aliceblue;
+        margin-top:100px;
+    }
         .comments {
             margin-top: 20px;
+           
         }
 
         .comment {
@@ -58,22 +58,38 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        main{
+            height: 800px;
+        }
+        #profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+       h4{
+        font-family:Arial, Helvetica, sans-serif;
+       }
     </style>
 </head>
 <body>
     <header>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="findtutor.html">Find Tutors</a></li>
-                    <li><a href="dubts.html">Doubts Solving</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="Ebooks.html">Ebooks</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                </ul>
-            </nav>
+           <nav class="navbar">
+            <ul>
+                <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+                <li><a href="home.html"><h4>Home</h4></a></li>
+                <li><a href="newebook.html"><h4>Ebooks</h4></a></li>
+                <li><a href="doubt.html"><h4>Doubt Solving</h4></a></li>
+                <li><a href="findtutor.html"><h4>Find Tutor</h4></a></li>
+                <li><a href="contact.html"><h4>Contact</h4></a></li>
+                <li><a href="about.html"><h4>About Us</h4></a></li>
+                <li class="ip"><a id="profile-link" href="dashboardprofile.html" >
+                    <img src="Group2.png" alt="Profile Image" width="40" height="40">
+                    <figcaption class="f">Profile</figcaption></a></li>
+            </ul>
+    </nav>
         </header>
     </header>
 
@@ -120,5 +136,13 @@
             document.getElementById('comment-text').value = '';
         }
     </script>
+    <footer>
+        <section id="#footer">
+        <div class="foot">
+            <p><strong>Email:</strong> adhyapan@gmail.com &nbsp; &nbsp; &nbsp; <strong>Phone:</strong> 051-521426</p>
+         
+        </div>
+    </section>
+    </footer>
 </body>
 </html>

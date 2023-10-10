@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <style>
+        #profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+    </style>
+</head>
+<body>
+    <header><nav class="navbar"><ul>
+        <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+        <li><a href="home.html"><h4>Home</h4></a></li>
+        <li><a href="newebook.html"><h4>Ebooks</h4></a></li>
+        <li><a href="doubt.html"><h4>Doubt Solving</h4></a></li>
+        <li><a href="findtutor.html"><h4>Find Tutor</h4></a></li>
+        <li><a href="#footer"><h4>Contact</h4></a></li>
+        <li><a href="about.html"><h4>About Us</h4></a></li>
+        <li class="ip"><a id="profile-link" >
+            <img src="Group2.png" alt="Profile Image" width="40" height="40">
+            <figcaption class="f">Profile</figcaption></a></li>
+    </ul></nav></header>
+    <center>
+    <div class="dashboard">
+        <h1>Welcome to Your Dashboard</h1>
+        <div id="user-info">
+            <p><strong>Name:</strong> <span id="user-name"></span></p>
+            <p><strong>Email:</strong> <span id="user-email"></span></p>
+            <p><strong>Address:</strong> <span id="user-address"></span></p>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </div>
+</center>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+
+    <h1>Tutoring Service Payment</h1>
+
+    <form action="processpayment.php" method="post">
+        <!-- Other form fields can be added as needed -->
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" required>
+
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <button type="submit">Proceed to Payment</button>
+    </form>
+
+</body>
+</html>

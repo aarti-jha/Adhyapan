@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #324FAF;
             margin: 20px;
         }
         form {
@@ -16,7 +16,7 @@
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 10px;  
         }
         label {
             display: block;
@@ -38,11 +38,22 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        button{
+            background-color:#45a049;
+            border:2px solid #45a049;
+            border-radius:5px;
+            
+        }
+        a{
+            text-decoration-line:none;
+            color:white;
+        }
     </style>
 </head>
 <body>
 
-    <form action="#" method="post" id="registrationForm">
+    <form action="form_student.php" method="post" id="registrationForm">
+        <h1>Fill these Details</h1>
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
@@ -62,7 +73,7 @@
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" required>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Apply">  
     </form>
 
 </body>

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    justify-content: center;
+    height: 100;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border:2px solid white;
+    width:600px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Reset some default styles */
+ ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: rgb(50 79 175);
+    border-bottom: 2px solid #00bcd4; /* Add a border at the bottom */
+}
+
+/* Style the list items horizontally */
+.navbar ul {
+    display: flex;
+    justify-content: flex-start; /* Items will be filled from left to right */
+}
+
+/* Style the list items */
+.navbar li {
+    padding: 10px 20px;
+    border-right: 1px solid #555; /* Add a border to separate the items */
+}
+
+/* Style the last list item to remove the right border */
+.navbar li:last-child {
+    border-right: none;
+}
+
+/* Style the links */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: rgb(160, 238, 105);
+    
+}
+a{
+    font-size:20px;
+    text-decoration-line:none;
+    color:white;
+}
