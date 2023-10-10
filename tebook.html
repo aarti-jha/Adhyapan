@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #bookGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .bookCard {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .bookCard:hover {
+            transform: scale(1.05);
+        }
+
+        #donateNote {
+            margin-top: 20px;
+            max-width: 600px;
+            font-style: italic;
+            color: #666;
+        }
+        #profile-link{
+       
+       margin-left:400px;
+       }
+       .f{
+         margin-left:380px;
+       }
+       h4{
+        font-family:Arial, Helvetica, sans-serif;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><img src="nobglogo.jpg" alt="error" class="im"></li>
+                <li><a href="homet.html"><h4>Home</h4></a></li>
+                <li><a href="tebook.html"><h4>Ebooks</h4></a></li>
+                <li><a href="tdoubt.html"><h4>Doubt Solving</h4></a></li>
+                <li><a href="notifications.html"><h4>Requests</h4></a></li>
+                <li><a href="#footer"><h4>Contact</h4></a></li>
+                <li><a href="tabout.html"><h4>About Us</h4></a></li>
+                <li class="ip"><a id="profile-link" href="tdashboardprofile.html" >
+                    <img src="Group2.png" alt="Profile Image" width="40" height="40">
+                    <figcaption class="f">Profile</figcaption></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="book">
+
+      <h1>Library</h1>
+<center>
+
+    <div id="bookGrid">
+        <!-- Book cards will be dynamically added here -->
+    </div>
+
+    <div id="donateNote">
+        <p>If anyone is interested in donating their soft copies of books and notes,</p>
+        <p>Please contact us on : 051-521426 or  </p>
+        <p>Mail us on : adhyapan@gmail.com</p>
+    </div>
+</div>
+</center>
+    <script>
+        // Simulate book data (replace this with actual data from your server)
+        var books = [
+            { title: 'Book 1', author: 'Author 1' },
+            { title: 'Book 2', author: 'Author 2' },
+            { title: 'Book 3', author: 'Author 3' },
+            // Add more books as needed
+        ];
+
+        // Function to create a book card HTML element
+        function createBookCard(book) {
+            var card = document.createElement('div');
+            card.classList.add('bookCard');
+            card.innerHTML = `<h3>${book.title}</h3><p>${book.author}</p>`;
+            return card;
+        }
+
+        // Function to display books in the grid
+        function displayBooks() {
+            var bookGrid = document.getElementById('bookGrid');
+
+            // Clear existing content
+            bookGrid.innerHTML = '';
+
+            // Create and append book cards
+            books.forEach(function(book) {
+                var card = createBookCard(book);
+                bookGrid.appendChild(card);
+            });
+        }
+
+        // Display books when the page loads
+        document.addEventListener('DOMContentLoaded', displayBooks);
+    </script>
+</body>
+</html>
